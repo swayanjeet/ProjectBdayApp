@@ -26,12 +26,13 @@ SECRET_KEY = 'ae$7x!%ua4%545!r@on_0o69+-lpvksx-gpz81xhjw3-k@0-+a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Rest Framework Settings
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 100
+    'PAGE_SIZE': 9,
+    'UPLOADED_FILES_USE_URL': False
 }
 
 # Application definition
@@ -61,6 +62,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'ProjectBdayApp.urls'
 CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_METHODS = (
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+)
 
 TEMPLATES = [
     {
@@ -92,6 +101,7 @@ DATABASES = {
     }
 }
 
+print DATABASES['default']['NAME']
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
@@ -132,22 +142,47 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+    'formatters': {
+        'simple': {
+            'format': '[%(asctime)s] %(levelname)s %(message)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S'
+        },
+        'verbose': {
+            'format': '[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S'
+        },
+    },
     'handlers': {
         'console': {
             'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+            'level': 'INFO'
+        },
+        'file': {
+            'class': 'logging.handlers.TimedRotatingFileHandler',
+            'filename': 'C:\Users\Paa\PycharmProjects\ProjectBdayApp\debug.log',
+            'formatter': 'verbose',
+            'when': 'midnight',
+            #'maxBytes': 1024*1024*5, # 5 MB
+            'backupCount': 25,
+            'level': 'DEBUG',
         },
     },
     'loggers': {
         'django': {
-            'handlers': ['console'],
-            'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
+            'handlers': ['console', 'file'],
+            'propagate': True,
+            'level': 'INFO'
         },
         'BdayApp': {
-            'handlers': ['console'],
-            'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
+            'handlers': ['console', 'file'],
+            'propagate': True,
+            'level': 'INFO'
         }
     },
 }

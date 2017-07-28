@@ -1,0 +1,443 @@
+[2017-05-08 00:18:28] DEBUG [django.db.backends.execute:90] (0.004) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-08 00:18:28] DEBUG [django.db.backends.execute:90] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-08 00:18:31] DEBUG [django.db.backends.execute:90] (0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'c15ksxzy9zt65r5nk3v09zddh117z411' AND "django_session"."expire_date" > '2017-05-07 18:48:31.889000'); args=('c15ksxzy9zt65r5nk3v09zddh117z411', u'2017-05-07 18:48:31.889000')
+[2017-05-08 00:18:31] DEBUG [django.db.backends.execute:90] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2017-05-08 00:18:31] DEBUG [django.db.backends.execute:90] (0.000) SELECT COUNT(*) AS "__count" FROM "BdayApp_giftstore"; args=()
+[2017-05-08 00:18:31] DEBUG [django.db.backends.execute:90] (0.001) SELECT COUNT(*) AS "__count" FROM "BdayApp_giftstore"; args=()
+[2017-05-08 00:18:32] DEBUG [django.db.backends.execute:90] (0.001) SELECT "BdayApp_giftstore"."id", "BdayApp_giftstore"."name", "BdayApp_giftstore"."link", "BdayApp_giftstore"."affiliated_link", "BdayApp_giftstore"."logo", "BdayApp_giftstore"."category_id", "BdayApp_giftstore"."subcategory_id" FROM "BdayApp_giftstore" ORDER BY "BdayApp_giftstore"."id" DESC; args=()
+[2017-05-08 00:18:32] DEBUG [django.template._resolve_lookup:929] Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [errors] in u'None'
+[2017-05-08 00:18:32] DEBUG [django.template._resolve_lookup:929] Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [show] in u"[{'False': False, 'None': None, 'True': True, 'csrf_token': <SimpleLazyObject: <function _get_val at 0x03EC8B30>>}]"
+[2017-05-08 00:18:32] DEBUG [django.template._resolve_lookup:929] Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_multipart] in u'None'
+[2017-05-08 00:18:32] DEBUG [django.template._resolve_lookup:929] Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+[2017-05-08 00:18:32] INFO [django.server.log_message:131] "GET /admin/BdayApp/giftstore/ HTTP/1.1" 200 4226
+[2017-05-08 00:18:32] DEBUG [django.db.backends.execute:90] (0.031) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'c15ksxzy9zt65r5nk3v09zddh117z411' AND "django_session"."expire_date" > '2017-05-07 18:48:32.482000'); args=('c15ksxzy9zt65r5nk3v09zddh117z411', u'2017-05-07 18:48:32.482000')
+[2017-05-08 00:18:32] DEBUG [django.db.backends.execute:90] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2017-05-08 00:18:32] INFO [django.server.log_message:131] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[2017-05-09 00:20:29] DEBUG [django.db.backends.execute:90] (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-09 00:20:29] DEBUG [django.db.backends.execute:90] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 00:20:57] DEBUG [django.db.backends.execute:90] (0.006) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'c15ksxzy9zt65r5nk3v09zddh117z411' AND "django_session"."expire_date" > '2017-05-05 18:50:57.450000'); args=('c15ksxzy9zt65r5nk3v09zddh117z411', u'2017-05-05 18:50:57.450000')
+[2017-05-06 00:20:57] DEBUG [django.db.backends.execute:90] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2017-05-06 00:20:57] DEBUG [django.db.backends.execute:90] (0.001) SELECT COUNT(*) AS "__count" FROM "BdayApp_giftstore"; args=()
+[2017-05-06 00:20:57] DEBUG [django.db.backends.execute:90] (0.000) SELECT COUNT(*) AS "__count" FROM "BdayApp_giftstore"; args=()
+[2017-05-06 00:20:57] DEBUG [django.db.backends.execute:90] (0.004) SELECT "BdayApp_giftstore"."id", "BdayApp_giftstore"."name", "BdayApp_giftstore"."link", "BdayApp_giftstore"."affiliated_link", "BdayApp_giftstore"."logo", "BdayApp_giftstore"."category_id", "BdayApp_giftstore"."subcategory_id" FROM "BdayApp_giftstore" ORDER BY "BdayApp_giftstore"."id" DESC; args=()
+[2017-05-06 00:20:57] DEBUG [django.template._resolve_lookup:929] Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [errors] in u'None'
+[2017-05-06 00:20:57] DEBUG [django.template._resolve_lookup:929] Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [show] in u"[{'False': False, 'None': None, 'True': True, 'csrf_token': <SimpleLazyObject: <function _get_val at 0x03E5CA30>>}]"
+[2017-05-06 00:20:57] DEBUG [django.template._resolve_lookup:929] Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_multipart] in u'None'
+[2017-05-06 00:20:57] DEBUG [django.template._resolve_lookup:929] Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+[2017-05-06 00:20:57] INFO [django.server.log_message:131] "GET /admin/BdayApp/giftstore/ HTTP/1.1" 200 4226
+[2017-05-06 00:20:57] DEBUG [django.db.backends.execute:90] (0.006) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'c15ksxzy9zt65r5nk3v09zddh117z411' AND "django_session"."expire_date" > '2017-05-05 18:50:57.834000'); args=('c15ksxzy9zt65r5nk3v09zddh117z411', u'2017-05-05 18:50:57.834000')
+[2017-05-06 00:20:57] DEBUG [django.db.backends.execute:90] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2017-05-06 00:20:57] INFO [django.server.log_message:131] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[2017-05-06 08:35:34] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 08:35:34] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 08:36:04] INFO [django.server.log_message:131] "GET /get_giftstores HTTP/1.1" 301 0
+[2017-05-06 08:36:05] DEBUG [django.db.backends.execute:90] (0.004) SELECT "BdayApp_category"."id", "BdayApp_category"."name", "BdayApp_category"."logo" FROM "BdayApp_category"; args=()
+[2017-05-06 08:36:05] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /get_giftstores/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view BdayApp.views.get_giftstore_data didn't return an HttpResponse object. It returned None instead.
+[2017-05-06 08:36:05] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'c15ksxzy9zt65r5nk3v09zddh117z411' AND "django_session"."expire_date" > '2017-05-06 03:06:05.382000'); args=('c15ksxzy9zt65r5nk3v09zddh117z411', u'2017-05-06 03:06:05.382000')
+[2017-05-06 08:36:05] DEBUG [django.db.backends.execute:90] (0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2017-05-06 08:36:05] ERROR [django.server.log_message:131] "GET /get_giftstores/ HTTP/1.1" 500 61398
+[2017-05-06 08:36:07] DEBUG [django.template._resolve_lookup:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2017-05-06 08:36:07] WARNING [django.request.get_response:152] Not Found: /favicon.ico
+[2017-05-06 08:36:07] WARNING [django.server.log_message:131] "GET /favicon.ico HTTP/1.1" 404 5996
+[2017-05-06 08:51:15] DEBUG [django.db.backends.execute:90] (0.015) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 08:51:15] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 08:51:23] DEBUG [django.db.backends.execute:90] (0.000) SELECT "BdayApp_category"."id", "BdayApp_category"."name", "BdayApp_category"."logo" FROM "BdayApp_category"; args=()
+[2017-05-06 08:51:23] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /get_giftstores/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view BdayApp.views.get_giftstore_data didn't return an HttpResponse object. It returned None instead.
+[2017-05-06 08:51:23] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'c15ksxzy9zt65r5nk3v09zddh117z411' AND "django_session"."expire_date" > '2017-05-06 03:21:23.302000'); args=('c15ksxzy9zt65r5nk3v09zddh117z411', u'2017-05-06 03:21:23.302000')
+[2017-05-06 08:51:23] DEBUG [django.db.backends.execute:90] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2017-05-06 08:51:23] ERROR [django.server.log_message:131] "GET /get_giftstores/ HTTP/1.1" 500 61533
+[2017-05-06 08:52:19] DEBUG [django.db.backends.execute:90] (0.015) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 08:52:19] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 08:56:52] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 08:56:52] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 11:59:30] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 11:59:30] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 12:01:41] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 12:01:41] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 12:01:55] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 12:01:55] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 12:02:19] DEBUG [django.db.backends.execute:90] (0.004) SELECT "BdayApp_category"."id", "BdayApp_category"."name", "BdayApp_category"."logo" FROM "BdayApp_category"; args=()
+[2017-05-06 12:02:19] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /get_giftstores/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\views.py", line 323, in get_giftstore_data
+    category_json = serializers.serialize('json',category)
+  File "E:\Python27\lib\site-packages\django\core\serializers\__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "E:\Python27\lib\site-packages\django\core\serializers\base.py", line 79, in serialize
+    for count, obj in enumerate(queryset, start=1):
+TypeError: 'Category' object is not iterable
+[2017-05-06 12:02:20] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'c15ksxzy9zt65r5nk3v09zddh117z411' AND "django_session"."expire_date" > '2017-05-06 06:32:20.001000'); args=('c15ksxzy9zt65r5nk3v09zddh117z411', u'2017-05-06 06:32:20.001000')
+[2017-05-06 12:02:20] DEBUG [django.db.backends.execute:90] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2017-05-06 12:02:20] ERROR [django.server.log_message:131] "GET /get_giftstores/ HTTP/1.1" 500 79133
+[2017-05-06 12:02:22] DEBUG [django.template._resolve_lookup:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2017-05-06 12:02:22] WARNING [django.request.get_response:152] Not Found: /favicon.ico
+[2017-05-06 12:02:22] WARNING [django.server.log_message:131] "GET /favicon.ico HTTP/1.1" 404 5996
+[2017-05-06 12:03:49] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 12:03:49] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 12:06:49] DEBUG [django.db.backends.execute:90] (0.015) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 12:06:49] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 12:08:40] DEBUG [django.db.backends.execute:90] (0.008) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 12:08:40] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 12:08:40] DEBUG [django.db.backends.execute:90] (0.004) SELECT "BdayApp_category"."id", "BdayApp_category"."name", "BdayApp_category"."logo" FROM "BdayApp_category"; args=()
+[2017-05-06 12:08:40] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /get_giftstores/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\views.py", line 325, in get_giftstore_data
+    category_json["sub_categories"] = []
+TypeError: 'Category' object does not support item assignment
+[2017-05-06 12:08:40] DEBUG [django.db.backends.execute:90] (0.000) SELECT "BdayApp_subcategory"."id", "BdayApp_subcategory"."name", "BdayApp_subcategory"."logo", "BdayApp_subcategory"."category_id" FROM "BdayApp_subcategory" WHERE "BdayApp_subcategory"."category_id" = 1 LIMIT 21; args=(1,)
+[2017-05-06 12:08:41] DEBUG [django.db.backends.execute:90] (0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'c15ksxzy9zt65r5nk3v09zddh117z411' AND "django_session"."expire_date" > '2017-05-06 06:38:41.128000'); args=('c15ksxzy9zt65r5nk3v09zddh117z411', u'2017-05-06 06:38:41.128000')
+[2017-05-06 12:08:41] DEBUG [django.db.backends.execute:90] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2017-05-06 12:08:41] ERROR [django.server.log_message:131] "GET /get_giftstores/ HTTP/1.1" 500 71718
+[2017-05-06 12:09:44] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 12:09:44] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 12:09:48] DEBUG [django.db.backends.execute:90] (0.000) SELECT "BdayApp_category"."id", "BdayApp_category"."name", "BdayApp_category"."logo" FROM "BdayApp_category"; args=()
+[2017-05-06 12:09:48] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /get_giftstores/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\views.py", line 326, in get_giftstore_data
+    category_json["sub_categories"] = []
+TypeError: 'Category' object does not support item assignment
+[2017-05-06 12:09:48] DEBUG [django.db.backends.execute:90] (0.004) SELECT "BdayApp_subcategory"."id", "BdayApp_subcategory"."name", "BdayApp_subcategory"."logo", "BdayApp_subcategory"."category_id" FROM "BdayApp_subcategory" WHERE "BdayApp_subcategory"."category_id" = 1 LIMIT 21; args=(1,)
+[2017-05-06 12:09:48] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'c15ksxzy9zt65r5nk3v09zddh117z411' AND "django_session"."expire_date" > '2017-05-06 06:39:48.540000'); args=('c15ksxzy9zt65r5nk3v09zddh117z411', u'2017-05-06 06:39:48.540000')
+[2017-05-06 12:09:48] DEBUG [django.db.backends.execute:90] (0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2017-05-06 12:09:48] ERROR [django.server.log_message:131] "GET /get_giftstores/ HTTP/1.1" 500 71731
+[2017-05-06 12:10:50] DEBUG [django.db.backends.execute:90] (0.008) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 12:10:50] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 12:10:50] DEBUG [django.db.backends.execute:90] (0.008) SELECT "BdayApp_category"."id", "BdayApp_category"."name", "BdayApp_category"."logo" FROM "BdayApp_category"; args=()
+[2017-05-06 12:10:50] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /get_giftstores/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\views.py", line 331, in get_giftstore_data
+    return HttpResponse(status=200, content_type="application/json", content=json.dumps(output_json))
+  File "E:\Python27\lib\json\__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "E:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "E:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "E:\Python27\lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <Category: Category object> is not JSON serializable
+[2017-05-06 12:10:51] DEBUG [django.db.backends.execute:90] (0.000) SELECT "BdayApp_subcategory"."id", "BdayApp_subcategory"."name", "BdayApp_subcategory"."logo", "BdayApp_subcategory"."category_id" FROM "BdayApp_subcategory" WHERE "BdayApp_subcategory"."category_id" = 2 LIMIT 21; args=(2,)
+[2017-05-06 12:10:51] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'c15ksxzy9zt65r5nk3v09zddh117z411' AND "django_session"."expire_date" > '2017-05-06 06:40:51.243000'); args=('c15ksxzy9zt65r5nk3v09zddh117z411', u'2017-05-06 06:40:51.243000')
+[2017-05-06 12:10:51] DEBUG [django.db.backends.execute:90] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2017-05-06 12:10:51] ERROR [django.server.log_message:131] "GET /get_giftstores/ HTTP/1.1" 500 88568
+[2017-05-06 12:11:35] DEBUG [django.db.backends.execute:90] (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 12:11:35] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 12:11:46] DEBUG [django.db.backends.execute:90] (0.004) SELECT "BdayApp_category"."id", "BdayApp_category"."name", "BdayApp_category"."logo" FROM "BdayApp_category"; args=()
+[2017-05-06 12:11:46] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /get_giftstores/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\views.py", line 331, in get_giftstore_data
+    return HttpResponse(status=200, content_type="application/json", content=json.dumps(output_json))
+  File "E:\Python27\lib\json\__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "E:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "E:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "E:\Python27\lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <Category: Category object> is not JSON serializable
+[2017-05-06 12:11:46] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'c15ksxzy9zt65r5nk3v09zddh117z411' AND "django_session"."expire_date" > '2017-05-06 06:41:46.865000'); args=('c15ksxzy9zt65r5nk3v09zddh117z411', u'2017-05-06 06:41:46.865000')
+[2017-05-06 12:11:46] DEBUG [django.db.backends.execute:90] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2017-05-06 12:11:47] ERROR [django.server.log_message:131] "GET /get_giftstores/ HTTP/1.1" 500 88388
+[2017-05-06 12:12:34] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 12:12:34] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:28:19] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 23:28:19] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:29:05] DEBUG [django.db.backends.execute:90] (0.003) SELECT "BdayApp_category"."id", "BdayApp_category"."name", "BdayApp_category"."logo" FROM "BdayApp_category"; args=()
+[2017-05-06 23:29:05] DEBUG [django.db.backends.execute:90] (0.000) SELECT "BdayApp_subcategory"."id", "BdayApp_subcategory"."name", "BdayApp_subcategory"."logo", "BdayApp_subcategory"."category_id" FROM "BdayApp_subcategory" WHERE "BdayApp_subcategory"."category_id" = 1; args=(1,)
+[2017-05-06 23:29:05] DEBUG [django.db.backends.execute:90] (0.001) SELECT "BdayApp_subcategory"."id", "BdayApp_subcategory"."name", "BdayApp_subcategory"."logo", "BdayApp_subcategory"."category_id" FROM "BdayApp_subcategory" WHERE "BdayApp_subcategory"."category_id" = 2; args=(2,)
+[2017-05-06 23:29:05] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /get_giftstores/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\views.py", line 330, in get_giftstore_data
+    return HttpResponse(status=200, content_type="application/json", content=json.dumps(output_json))
+  File "E:\Python27\lib\json\__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "E:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "E:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "E:\Python27\lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <ImageFieldFile: images/2017/05/05/6a00e5509b3be688340111684db157970c-800wi.jpg> is not JSON serializable
+[2017-05-06 23:29:05] DEBUG [django.db.backends.execute:90] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'c15ksxzy9zt65r5nk3v09zddh117z411' AND "django_session"."expire_date" > '2017-05-06 17:59:05.767000'); args=('c15ksxzy9zt65r5nk3v09zddh117z411', u'2017-05-06 17:59:05.767000')
+[2017-05-06 23:29:05] DEBUG [django.db.backends.execute:90] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2017-05-06 23:29:06] ERROR [django.server.log_message:131] "GET /get_giftstores/ HTTP/1.1" 500 92233
+[2017-05-06 23:29:07] DEBUG [django.template._resolve_lookup:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2017-05-06 23:29:08] WARNING [django.request.get_response:152] Not Found: /favicon.ico
+[2017-05-06 23:29:08] WARNING [django.server.log_message:131] "GET /favicon.ico HTTP/1.1" 404 5996
+[2017-05-06 23:32:06] DEBUG [django.db.backends.execute:90] (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 23:32:06] DEBUG [django.db.backends.execute:90] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:32:06] DEBUG [django.db.backends.execute:90] (0.006) SELECT "BdayApp_category"."id", "BdayApp_category"."name", "BdayApp_category"."logo" FROM "BdayApp_category"; args=()
+[2017-05-06 23:32:06] DEBUG [django.db.backends.execute:90] (0.001) SELECT "BdayApp_subcategory"."id", "BdayApp_subcategory"."name", "BdayApp_subcategory"."logo", "BdayApp_subcategory"."category_id" FROM "BdayApp_subcategory" WHERE "BdayApp_subcategory"."category_id" = 1; args=(1,)
+[2017-05-06 23:32:06] DEBUG [django.db.backends.execute:90] (0.001) SELECT "BdayApp_subcategory"."id", "BdayApp_subcategory"."name", "BdayApp_subcategory"."logo", "BdayApp_subcategory"."category_id" FROM "BdayApp_subcategory" WHERE "BdayApp_subcategory"."category_id" = 2; args=(2,)
+[2017-05-06 23:32:06] INFO [django.server.log_message:131] "GET /get_giftstores/ HTTP/1.1" 200 321
+[2017-05-06 23:34:49] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 23:34:49] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:35:19] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 23:35:19] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:35:29] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 23:35:29] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:37:03] DEBUG [django.db.backends.execute:90] (0.004) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 23:37:03] DEBUG [django.db.backends.execute:90] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:39:06] DEBUG [django.db.backends.execute:90] (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 23:39:06] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:39:58] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 23:39:58] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:40:33] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 23:40:33] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:43:33] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 23:43:33] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:43:49] DEBUG [django.db.backends.execute:90] (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 23:43:49] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:44:38] DEBUG [django.db.backends.execute:90] (0.004) SELECT "BdayApp_category"."id", "BdayApp_category"."name", "BdayApp_category"."logo" FROM "BdayApp_category"; args=()
+[2017-05-06 23:44:38] DEBUG [django.db.backends.execute:90] (0.000) SELECT "BdayApp_subcategory"."id", "BdayApp_subcategory"."name", "BdayApp_subcategory"."logo", "BdayApp_subcategory"."category_id" FROM "BdayApp_subcategory" WHERE "BdayApp_subcategory"."category_id" = 1; args=(1,)
+[2017-05-06 23:44:38] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /get_giftstores/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\views.py", line 332, in get_giftstore_data
+    giftstores = GiftStore.objects.filter(criterion_1 & criterion_2)
+  File "E:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\Python27\lib\site-packages\django\db\models\query.py", line 794, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\django\db\models\query.py", line 812, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "E:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "E:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1247, in _add_q
+    current_negated, allow_joins, split_subq)
+  File "E:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "E:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1133, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "E:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1019, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "E:\Python27\lib\site-packages\django\db\models\sql\query.py", line 1327, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'sub_category' into field. Choices are: affiliated_link, category, category_id, id, link, logo, name, subcategory, subcategory_id
+[2017-05-06 23:44:38] DEBUG [django.db.backends.execute:90] (0.000) SELECT "BdayApp_giftstore"."id", "BdayApp_giftstore"."name", "BdayApp_giftstore"."link", "BdayApp_giftstore"."affiliated_link", "BdayApp_giftstore"."logo", "BdayApp_giftstore"."category_id", "BdayApp_giftstore"."subcategory_id" FROM "BdayApp_giftstore" LIMIT 21; args=()
+[2017-05-06 23:44:38] DEBUG [django.db.backends.execute:90] (0.001) SELECT "BdayApp_giftstore"."id", "BdayApp_giftstore"."name", "BdayApp_giftstore"."link", "BdayApp_giftstore"."affiliated_link", "BdayApp_giftstore"."logo", "BdayApp_giftstore"."category_id", "BdayApp_giftstore"."subcategory_id" FROM "BdayApp_giftstore" LIMIT 21; args=()
+[2017-05-06 23:44:38] DEBUG [django.db.backends.execute:90] (0.001) SELECT "BdayApp_giftstore"."id", "BdayApp_giftstore"."name", "BdayApp_giftstore"."link", "BdayApp_giftstore"."affiliated_link", "BdayApp_giftstore"."logo", "BdayApp_giftstore"."category_id", "BdayApp_giftstore"."subcategory_id" FROM "BdayApp_giftstore" LIMIT 21; args=()
+[2017-05-06 23:44:38] DEBUG [django.db.backends.execute:90] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'c15ksxzy9zt65r5nk3v09zddh117z411' AND "django_session"."expire_date" > '2017-05-06 18:14:38.751000'); args=('c15ksxzy9zt65r5nk3v09zddh117z411', u'2017-05-06 18:14:38.751000')
+[2017-05-06 23:44:38] DEBUG [django.db.backends.execute:90] (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2017-05-06 23:44:38] ERROR [django.server.log_message:131] "GET /get_giftstores/ HTTP/1.1" 500 117044
+[2017-05-06 23:46:15] DEBUG [django.db.backends.execute:90] (0.006) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 23:46:15] DEBUG [django.db.backends.execute:90] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:46:16] DEBUG [django.db.backends.execute:90] (0.004) SELECT "BdayApp_category"."id", "BdayApp_category"."name", "BdayApp_category"."logo" FROM "BdayApp_category"; args=()
+[2017-05-06 23:46:16] DEBUG [django.db.backends.execute:90] (0.001) SELECT "BdayApp_subcategory"."id", "BdayApp_subcategory"."name", "BdayApp_subcategory"."logo", "BdayApp_subcategory"."category_id" FROM "BdayApp_subcategory" WHERE "BdayApp_subcategory"."category_id" = 1; args=(1,)
+[2017-05-06 23:46:16] DEBUG [django.db.backends.execute:90] (0.002) SELECT "BdayApp_giftstore"."id", "BdayApp_giftstore"."name", "BdayApp_giftstore"."link", "BdayApp_giftstore"."affiliated_link", "BdayApp_giftstore"."logo", "BdayApp_giftstore"."category_id", "BdayApp_giftstore"."subcategory_id" FROM "BdayApp_giftstore" WHERE ("BdayApp_giftstore"."subcategory_id" = 1 AND "BdayApp_giftstore"."category_id" = 1); args=(1, 1)
+[2017-05-06 23:46:16] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /get_giftstores/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\views.py", line 334, in get_giftstore_data
+    giftstore_json = {"name":giftstore.name,"link":giftstore.link,"affiliated_link":giftstore.affiliated_link,"logo":giftstore.logo.name}
+AttributeError: 'unicode' object has no attribute 'name'
+[2017-05-06 23:46:16] DEBUG [django.db.backends.execute:90] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'c15ksxzy9zt65r5nk3v09zddh117z411' AND "django_session"."expire_date" > '2017-05-06 18:16:16.309000'); args=('c15ksxzy9zt65r5nk3v09zddh117z411', u'2017-05-06 18:16:16.309000')
+[2017-05-06 23:46:16] DEBUG [django.db.backends.execute:90] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[2017-05-06 23:46:16] ERROR [django.server.log_message:131] "GET /get_giftstores/ HTTP/1.1" 500 73686
+[2017-05-06 23:46:55] DEBUG [django.db.backends.execute:90] (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 23:46:55] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:47:19] DEBUG [django.db.backends.execute:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 23:47:19] DEBUG [django.db.backends.execute:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:47:32] DEBUG [django.db.backends.execute:90] (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-05-06 23:47:32] DEBUG [django.db.backends.execute:90] (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-05-06 23:47:32] DEBUG [django.db.backends.execute:90] (0.002) SELECT "BdayApp_category"."id", "BdayApp_category"."name", "BdayApp_category"."logo" FROM "BdayApp_category"; args=()
+[2017-05-06 23:47:32] DEBUG [django.db.backends.execute:90] (0.001) SELECT "BdayApp_subcategory"."id", "BdayApp_subcategory"."name", "BdayApp_subcategory"."logo", "BdayApp_subcategory"."category_id" FROM "BdayApp_subcategory" WHERE "BdayApp_subcategory"."category_id" = 1; args=(1,)
+[2017-05-06 23:47:32] DEBUG [django.db.backends.execute:90] (0.001) SELECT "BdayApp_giftstore"."id", "BdayApp_giftstore"."name", "BdayApp_giftstore"."link", "BdayApp_giftstore"."affiliated_link", "BdayApp_giftstore"."logo", "BdayApp_giftstore"."category_id", "BdayApp_giftstore"."subcategory_id" FROM "BdayApp_giftstore" WHERE ("BdayApp_giftstore"."subcategory_id" = 1 AND "BdayApp_giftstore"."category_id" = 1); args=(1, 1)
+[2017-05-06 23:47:32] DEBUG [django.db.backends.execute:90] (0.001) SELECT "BdayApp_subcategory"."id", "BdayApp_subcategory"."name", "BdayApp_subcategory"."logo", "BdayApp_subcategory"."category_id" FROM "BdayApp_subcategory" WHERE "BdayApp_subcategory"."category_id" = 2; args=(2,)
+[2017-05-06 23:47:32] INFO [django.server.log_message:131] "GET /get_giftstores/ HTTP/1.1" 200 468

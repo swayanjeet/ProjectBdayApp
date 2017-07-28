@@ -1,0 +1,787 @@
+[2017-05-12 08:54:49] INFO [BdayApp.EventListView.get_queryset:30] Starting function get_queryset for EventListView
+[2017-05-12 08:54:49] INFO [BdayApp.EventListView.get_queryset:34] access token is EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD user is None
+[2017-05-12 08:54:52] INFO [BdayApp.EventListView.get_queryset:36] user obtained from access token
+[2017-05-12 08:54:52] INFO [BdayApp.EventListView.get_queryset:45] events obtained in which user is admin as well as user
+[2017-05-12 08:54:52] INFO [BdayApp.EventListView.get_queryset:46] Completing function get_queryset for
+[2017-05-12 08:54:52] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/list HTTP/1.1" 200 52
+[2017-05-12 09:29:08] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_request(request)
+  File "E:\Python27\lib\site-packages\django\middleware\common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "E:\Python27\lib\site-packages\django\middleware\common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:3000/EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2017-05-12 09:29:09] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events HTTP/1.1" 500 72683
+[2017-05-12 09:29:30] WARNING [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ HTTP/1.1" 403 58
+[2017-05-12 09:30:01] WARNING [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ HTTP/1.1" 403 58
+[2017-05-12 09:33:33] WARNING [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ HTTP/1.1" 403 58
+[2017-05-12 09:39:19] WARNING [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ HTTP/1.1" 403 58
+[2017-05-12 09:39:30] WARNING [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ HTTP/1.1" 403 58
+[2017-05-12 09:41:03] WARNING [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ HTTP/1.1" 403 58
+[2017-05-12 09:47:10] WARNING [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ HTTP/1.1" 403 58
+[2017-05-12 09:48:47] WARNING [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ HTTP/1.1" 403 58
+[2017-05-12 09:48:59] WARNING [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ HTTP/1.1" 403 58
+[2017-05-12 09:51:57] WARNING [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ HTTP/1.1" 403 58
+[2017-05-12 09:52:06] WARNING [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ HTTP/1.1" 403 58
+[2017-05-12 09:52:31] WARNING [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ HTTP/1.1" 403 58
+[2017-05-12 09:52:34] WARNING [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ HTTP/1.1" 403 58
+[2017-05-12 09:53:02] INFO [BdayApp.EventView.post:89] Starting POST method
+[2017-05-12 09:53:02] INFO [BdayApp.EventView.post:91] access token is EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD
+[2017-05-12 09:53:03] ERROR [BdayApp.UserProfileView.handle_error:64] HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v2.8/me?access_token=EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x03F2DB30>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+[2017-05-12 09:53:03] ERROR [BdayApp.EventView.handle_error:27] HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v2.8/me?access_token=EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x03F2DB30>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+[2017-05-12 09:53:03] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ HTTP/1.1" 500 514
+[2017-05-12 09:53:15] INFO [BdayApp.EventView.post:89] Starting POST method
+[2017-05-12 09:53:15] INFO [BdayApp.EventView.post:91] access token is EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD
+[2017-05-12 09:53:17] ERROR [BdayApp.UserProfileView.handle_error:64] Error validating access token: Session has expired on Thursday, 11-May-17 21:00:00 PDT. The current time is Thursday, 11-May-17 21:23:17 PDT.
+[2017-05-12 09:53:17] ERROR [BdayApp.EventView.handle_error:27] Error validating access token: Session has expired on Thursday, 11-May-17 21:00:00 PDT. The current time is Thursday, 11-May-17 21:23:17 PDT.
+[2017-05-12 09:53:17] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBAHr5jPmSO2f9AlicNwXc7hrzqTOxRv7dFJOgKwMZAQEvDlbcoT5L1ntEMAhFZBS3POonxSJjbyc4LZB6OUI5iKkVv8LWLnEZBCjw21wZCm7gZCycCdodaKZAppgGTP7ZAepfwIo6QKQT3PIqW30AE4lgQNYQFR9GUyIxKWsz9LZCtHbgOCG64HEMZD/events/ HTTP/1.1" 500 154
+[2017-05-12 09:55:08] WARNING [django.server.log_message:131] "POST /EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD/events/ HTTP/1.1" 403 58
+[2017-05-12 09:55:33] INFO [BdayApp.EventView.post:89] Starting POST method
+[2017-05-12 09:55:33] INFO [BdayApp.EventView.post:91] access token is EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD
+[2017-05-12 09:55:34] INFO [BdayApp.EventView.post:93] user found from access token
+[2017-05-12 09:55:34] INFO [BdayApp.models.create_event:43] 1
+[2017-05-12 09:55:35] INFO [BdayApp.EventView.post:105] event created with name Munu's Bday start date 2017-09-08
+[2017-05-12 09:55:35] INFO [BdayApp.EventView.post:110] wallet created
+[2017-05-12 09:55:35] INFO [BdayApp.EventView.post:112] Completing POST method
+[2017-05-12 09:55:35] INFO [django.server.log_message:131] "POST /EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD/events/ HTTP/1.1" 200 165
+[2017-05-12 09:55:53] INFO [BdayApp.EventView.post:89] Starting POST method
+[2017-05-12 09:55:53] INFO [BdayApp.EventView.post:91] access token is EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD
+[2017-05-12 09:55:55] INFO [BdayApp.EventView.post:93] user found from access token
+[2017-05-12 09:55:55] INFO [BdayApp.EventView.post:97] file found in request
+[2017-05-12 09:55:55] INFO [BdayApp.models.create_event:43] 2
+[2017-05-12 09:55:55] INFO [BdayApp.EventView.post:105] event created with name Munu's Bday start date 2017-09-08
+[2017-05-12 09:55:55] INFO [BdayApp.EventView.post:110] wallet created
+[2017-05-12 09:55:55] INFO [BdayApp.EventView.post:112] Completing POST method
+[2017-05-12 09:55:55] INFO [django.server.log_message:131] "POST /EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD/events/ HTTP/1.1" 200 219
+[2017-05-12 10:21:03] INFO [BdayApp.EventView.get:66] Starting GET method
+[2017-05-12 10:21:03] INFO [BdayApp.EventView.get:69] access token is EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD event id is 2
+[2017-05-12 10:21:03] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 10:21:03] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD event id is 2
+[2017-05-12 10:21:03] ERROR [BdayApp.UserProfileView.handle_error:64] HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v2.8/me?access_token=EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x03CFD930>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+[2017-05-12 10:21:03] ERROR [BdayApp.EventView.handle_error:28] HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v2.8/me?access_token=EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x03CFD930>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+[2017-05-12 10:21:03] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 37, in get_event
+    user = UserProfileView.get_profile(access_token).user
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\UserProfileView.py", line 81, in get_profile
+    UserProfileView.handle_error(e)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\UserProfileView.py", line 65, in handle_error
+    raise exceptions.APIException(e)
+APIException: HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v2.8/me?access_token=EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x03CFD930>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+
+[2017-05-12 10:21:03] ERROR [BdayApp.EventView.handle_error:28] HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v2.8/me?access_token=EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x03CFD930>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+[2017-05-12 10:21:03] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 70, in get
+    event = EventView.get_event(access_token, id)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 62, in get_event
+    EventView.handle_error(e)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 30, in handle_error
+    raise exceptions.APIException(e)
+APIException: HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v2.8/me?access_token=EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x03CFD930>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+
+[2017-05-12 10:21:03] ERROR [django.server.log_message:131] "GET /EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD/events/2/ HTTP/1.1" 500 517
+[2017-05-12 10:35:33] INFO [BdayApp.EventView.get:66] Starting GET method
+[2017-05-12 10:35:33] INFO [BdayApp.EventView.get:69] access token is EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD event id is 2
+[2017-05-12 10:35:33] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 10:35:33] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD event id is 2
+[2017-05-12 10:35:39] INFO [BdayApp.EventView.get_event:38] user found from access token
+[2017-05-12 10:35:39] INFO [BdayApp.EventView.get_event:40] event object found with id 2
+[2017-05-12 10:35:39] INFO [BdayApp.EventView.get_event:43] Completing function get_event
+[2017-05-12 10:35:39] INFO [BdayApp.EventView.get:72] Completing GET method
+[2017-05-12 10:35:39] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD/events/2/ HTTP/1.1" 200 230
+[2017-05-12 10:36:19] INFO [BdayApp.EventView.put:79] Starting PUT method
+[2017-05-12 10:36:19] INFO [BdayApp.EventView.put:82] access token is EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD event id is 2
+[2017-05-12 10:36:19] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 10:36:19] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD event id is 2
+[2017-05-12 10:36:21] INFO [BdayApp.EventView.get_event:38] user found from access token
+[2017-05-12 10:36:21] INFO [BdayApp.EventView.get_event:40] event object found with id 2
+[2017-05-12 10:36:21] INFO [BdayApp.EventView.get_event:49] Completing function get_event
+[2017-05-12 10:36:21] INFO [BdayApp.EventView.put:87] found file in request
+[2017-05-12 10:36:22] INFO [BdayApp.EventView.put:92] Completing PUT method
+[2017-05-12 10:36:22] INFO [django.server.log_message:131] "PUT /EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD/events/2/ HTTP/1.1" 200 222
+[2017-05-12 12:28:49] INFO [BdayApp.EventView.put:79] Starting PUT method
+[2017-05-12 12:28:49] INFO [BdayApp.EventView.put:82] access token is EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD event id is 
+[2017-05-12 12:28:49] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 12:28:49] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD event id is 
+[2017-05-12 12:29:03] ERROR [BdayApp.UserProfileView.handle_error:64] Error validating access token: Session has expired on Thursday, 11-May-17 23:00:00 PDT. The current time is Thursday, 11-May-17 23:59:04 PDT.
+[2017-05-12 12:29:03] ERROR [BdayApp.EventView.handle_error:28] Error validating access token: Session has expired on Thursday, 11-May-17 23:00:00 PDT. The current time is Thursday, 11-May-17 23:59:04 PDT.
+[2017-05-12 12:29:03] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 37, in get_event
+    user = UserProfileView.get_profile(access_token).user
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\UserProfileView.py", line 81, in get_profile
+    UserProfileView.handle_error(e)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\UserProfileView.py", line 65, in handle_error
+    raise exceptions.APIException(e)
+APIException: Error validating access token: Session has expired on Thursday, 11-May-17 23:00:00 PDT. The current time is Thursday, 11-May-17 23:59:04 PDT.
+
+[2017-05-12 12:29:03] ERROR [BdayApp.EventView.handle_error:28] Error validating access token: Session has expired on Thursday, 11-May-17 23:00:00 PDT. The current time is Thursday, 11-May-17 23:59:04 PDT.
+[2017-05-12 12:29:03] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 83, in put
+    event = EventView.get_event(access_token, id, user_in="admin")
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 62, in get_event
+    EventView.handle_error(e)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 30, in handle_error
+    raise exceptions.APIException(e)
+APIException: Error validating access token: Session has expired on Thursday, 11-May-17 23:00:00 PDT. The current time is Thursday, 11-May-17 23:59:04 PDT.
+
+[2017-05-12 12:29:03] ERROR [django.server.log_message:131] "PUT /EAAX7retDkCcBAP3xFZBNXm9KEZCuyZANb8FGAbNC2WPe6sLrefHqhqZAkZCpyMLDvpDvD30ZCneFHp5up5fMF7XZBd9ZAFJYFhZCe6l12XDnCGfPHoT7XpYpmZBSofcqCeVdMjrtkbAaxZB4zvufkYL0z4YZCsA8bj8MvNK0bqfDEu8tWFXANzfALxfKVk9ghaGm5lMZD/events/ HTTP/1.1" 500 154
+[2017-05-12 12:34:12] INFO [BdayApp.EventView.post:110] Starting POST method
+[2017-05-12 12:34:12] INFO [BdayApp.EventView.post:112] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD
+[2017-05-12 12:34:21] INFO [BdayApp.EventView.post:114] user found from access token
+[2017-05-12 12:34:21] ERROR [BdayApp.EventView.handle_error:28] "'name'"
+[2017-05-12 12:34:21] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 125, in post
+    event = Event.objects.create_event(admin=user,name=request.data['name'],start_date=request.data['start_date'],end_date=end_date,picture=file)
+  File "E:\Python27\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'name'"
+
+[2017-05-12 12:34:21] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/ HTTP/1.1" 500 23
+[2017-05-12 12:34:35] INFO [BdayApp.EventView.post:110] Starting POST method
+[2017-05-12 12:34:35] INFO [BdayApp.EventView.post:112] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD
+[2017-05-12 12:34:49] INFO [BdayApp.EventView.post:114] user found from access token
+[2017-05-12 12:34:49] ERROR [BdayApp.EventView.handle_error:28] "'name'"
+[2017-05-12 12:34:49] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 125, in post
+    event = Event.objects.create_event(admin=user,name=request.data['name'],start_date=request.data['start_date'],end_date=end_date,picture=file)
+  File "E:\Python27\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'name'"
+
+[2017-05-12 12:34:49] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/ HTTP/1.1" 500 23
+[2017-05-12 12:36:54] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_request(request)
+  File "E:\Python27\lib\site-packages\django\middleware\common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "E:\Python27\lib\site-packages\django\middleware\common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:3000/EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2017-05-12 12:36:54] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events HTTP/1.1" 500 71320
+[2017-05-12 12:37:15] INFO [BdayApp.EventView.post:110] Starting POST method
+[2017-05-12 12:37:15] INFO [BdayApp.EventView.post:112] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD
+[2017-05-12 12:37:26] INFO [BdayApp.EventView.post:114] user found from access token
+[2017-05-12 12:37:26] ERROR [BdayApp.EventView.handle_error:28] "'name'"
+[2017-05-12 12:37:26] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 125, in post
+    event = Event.objects.create_event(admin=user,name=request.data['name'],start_date=request.data['start_date'],end_date=end_date,picture=file)
+  File "E:\Python27\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'name'"
+
+[2017-05-12 12:37:26] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/ HTTP/1.1" 500 23
+[2017-05-12 12:41:09] INFO [BdayApp.EventView.post:110] Starting POST method
+[2017-05-12 12:41:09] INFO [BdayApp.EventView.post:112] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD
+[2017-05-12 12:41:16] INFO [BdayApp.EventView.post:114] user found from access token
+[2017-05-12 12:41:16] ERROR [BdayApp.EventView.handle_error:28] "'name'"
+[2017-05-12 12:41:16] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 125, in post
+    event = Event.objects.create_event(admin=user,name=request.data['name'],start_date=request.data['start_date'],end_date=end_date,picture=file)
+  File "E:\Python27\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'name'"
+
+[2017-05-12 12:41:16] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/ HTTP/1.1" 500 23
+[2017-05-12 12:42:47] INFO [BdayApp.EventView.post:110] Starting POST method
+[2017-05-12 12:42:47] INFO [BdayApp.EventView.post:112] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD
+[2017-05-12 12:43:04] INFO [BdayApp.EventView.post:114] user found from access token
+[2017-05-12 12:43:04] ERROR [BdayApp.EventView.handle_error:28] "'name'"
+[2017-05-12 12:43:04] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 125, in post
+    logger.info("Event name is "+request.data['name'])
+  File "E:\Python27\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'name'"
+
+[2017-05-12 12:43:04] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/ HTTP/1.1" 500 23
+[2017-05-12 12:56:39] INFO [BdayApp.EventView.post:110] Starting POST method
+[2017-05-12 12:56:39] INFO [BdayApp.EventView.post:112] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD
+[2017-05-12 12:56:44] INFO [BdayApp.EventView.post:114] user found from access token
+[2017-05-12 12:56:44] ERROR [BdayApp.EventView.handle_error:28] "'name'"
+[2017-05-12 12:56:44] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 125, in post
+    event = Event.objects.create_event(admin=user,name=request.data['name'],start_date=request.data['start_date'],end_date=end_date,picture=file)
+  File "E:\Python27\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'name'"
+
+[2017-05-12 12:56:44] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/ HTTP/1.1" 500 23
+[2017-05-12 12:57:31] INFO [BdayApp.EventView.post:110] Starting POST method
+[2017-05-12 12:57:31] INFO [BdayApp.EventView.post:112] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD
+[2017-05-12 12:57:42] INFO [BdayApp.EventView.post:114] user found from access token
+[2017-05-12 12:57:42] ERROR [BdayApp.EventView.handle_error:28] "'name'"
+[2017-05-12 12:57:42] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 126, in post
+    event = Event.objects.create_event(admin=user,name=request.data['name'],start_date=request.data['start_date'],end_date=end_date,picture=file)
+  File "E:\Python27\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'name'"
+
+[2017-05-12 12:57:42] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/ HTTP/1.1" 500 23
+[2017-05-12 13:00:16] INFO [BdayApp.EventView.post:110] Starting POST method
+[2017-05-12 13:00:16] INFO [BdayApp.EventView.post:112] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD
+[2017-05-12 13:00:22] INFO [BdayApp.EventView.post:114] user found from access token
+[2017-05-12 13:00:22] INFO [BdayApp.models.create_event:43] 3
+[2017-05-12 13:00:22] INFO [BdayApp.EventView.post:127] event created with name Test start date 2017-08-09
+[2017-05-12 13:00:23] INFO [BdayApp.EventView.post:132] wallet created
+[2017-05-12 13:00:23] INFO [BdayApp.EventView.post:134] Completing POST method
+[2017-05-12 13:00:23] INFO [django.server.log_message:131] "POST /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/ HTTP/1.1" 200 158
+[2017-05-12 13:02:57] INFO [BdayApp.EventView.post:110] Starting POST method
+[2017-05-12 13:02:57] INFO [BdayApp.EventView.post:112] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD
+[2017-05-12 13:03:04] INFO [BdayApp.EventView.post:114] user found from access token
+[2017-05-12 13:03:04] ERROR [BdayApp.EventView.handle_error:28] "'name'"
+[2017-05-12 13:03:04] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 126, in post
+    event = Event.objects.create_event(admin=user,name=request.data['name'],start_date=request.data['start_date'],end_date=end_date,picture=file)
+  File "E:\Python27\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'name'"
+
+[2017-05-12 13:03:04] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/ HTTP/1.1" 500 23
+[2017-05-12 13:04:23] INFO [BdayApp.EventView.post:110] Starting POST method
+[2017-05-12 13:04:23] INFO [BdayApp.EventView.post:112] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD
+[2017-05-12 13:04:31] INFO [BdayApp.EventView.post:114] user found from access token
+[2017-05-12 13:04:31] ERROR [BdayApp.EventView.handle_error:28] "'name'"
+[2017-05-12 13:04:31] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 126, in post
+    event = Event.objects.create_event(admin=user,name=request.data['name'],start_date=request.data['start_date'],end_date=end_date,picture=file)
+  File "E:\Python27\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'name'"
+
+[2017-05-12 13:04:31] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/ HTTP/1.1" 500 23
+[2017-05-12 13:09:45] INFO [BdayApp.EventView.post:110] Starting POST method
+[2017-05-12 13:09:45] INFO [BdayApp.EventView.post:112] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD
+[2017-05-12 13:09:56] INFO [BdayApp.EventView.post:114] user found from access token
+[2017-05-12 13:09:56] ERROR [BdayApp.EventView.handle_error:28] "'name'"
+[2017-05-12 13:09:56] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 126, in post
+    event = Event.objects.create_event(admin=user,name=request.data['name'],start_date=request.data['start_date'],end_date=end_date,picture=file)
+  File "E:\Python27\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'name'"
+
+[2017-05-12 13:09:56] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/ HTTP/1.1" 500 23
+[2017-05-12 13:16:15] INFO [BdayApp.EventView.get:66] Starting GET method
+[2017-05-12 13:16:15] INFO [BdayApp.EventView.get:69] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:16:15] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 13:16:15] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:16:20] INFO [BdayApp.EventView.get_event:38] user found from access token
+[2017-05-12 13:16:20] INFO [BdayApp.EventView.get_event:40] event object found with id 2
+[2017-05-12 13:16:20] INFO [BdayApp.EventView.get_event:43] Completing function get_event
+[2017-05-12 13:16:20] INFO [BdayApp.EventView.get:72] Completing GET method
+[2017-05-12 13:16:20] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/ HTTP/1.1" 200 222
+[2017-05-12 13:16:38] INFO [BdayApp.EventView.put:79] Starting PUT method
+[2017-05-12 13:16:38] INFO [BdayApp.EventView.put:82] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:16:38] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 13:16:38] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:16:45] INFO [BdayApp.EventView.get_event:38] user found from access token
+[2017-05-12 13:16:45] INFO [BdayApp.EventView.get_event:40] event object found with id 2
+[2017-05-12 13:16:45] INFO [BdayApp.EventView.get_event:49] Completing function get_event
+[2017-05-12 13:16:45] INFO [BdayApp.EventView.put:92] Completing PUT method
+[2017-05-12 13:16:45] INFO [django.server.log_message:131] "PUT /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/ HTTP/1.1" 200 176
+[2017-05-12 13:45:46] INFO [BdayApp.EventView.put:79] Starting PUT method
+[2017-05-12 13:45:46] INFO [BdayApp.EventView.put:82] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:45:46] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 13:45:46] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:46:01] INFO [BdayApp.EventView.get_event:38] user found from access token
+[2017-05-12 13:46:01] INFO [BdayApp.EventView.get_event:40] event object found with id 2
+[2017-05-12 13:46:01] INFO [BdayApp.EventView.get_event:49] Completing function get_event
+[2017-05-12 13:46:01] INFO [BdayApp.EventView.put:92] Completing PUT method
+[2017-05-12 13:46:01] INFO [django.server.log_message:131] "PUT /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/ HTTP/1.1" 200 176
+[2017-05-12 13:47:43] INFO [BdayApp.EventView.put:79] Starting PUT method
+[2017-05-12 13:47:43] INFO [BdayApp.EventView.put:82] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:47:43] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 13:47:43] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:48:01] INFO [BdayApp.EventView.get_event:38] user found from access token
+[2017-05-12 13:48:01] INFO [BdayApp.EventView.get_event:40] event object found with id 2
+[2017-05-12 13:48:01] INFO [BdayApp.EventView.get_event:49] Completing function get_event
+[2017-05-12 13:48:01] INFO [BdayApp.EventView.put:93] Completing PUT method
+[2017-05-12 13:48:01] INFO [django.server.log_message:131] "PUT /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/ HTTP/1.1" 200 176
+[2017-05-12 13:49:00] INFO [BdayApp.EventView.get:66] Starting GET method
+[2017-05-12 13:49:00] INFO [BdayApp.EventView.get:69] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:49:00] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 13:49:00] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:49:14] INFO [BdayApp.EventView.get_event:38] user found from access token
+[2017-05-12 13:49:14] INFO [BdayApp.EventView.get_event:40] event object found with id 2
+[2017-05-12 13:49:14] INFO [BdayApp.EventView.get_event:43] Completing function get_event
+[2017-05-12 13:49:14] INFO [BdayApp.EventView.get:72] Completing GET method
+[2017-05-12 13:49:14] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/ HTTP/1.1" 200 176
+[2017-05-12 13:49:42] INFO [BdayApp.EventView.put:79] Starting PUT method
+[2017-05-12 13:49:42] INFO [BdayApp.EventView.put:82] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:49:42] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 13:49:42] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:49:59] INFO [BdayApp.EventView.get_event:38] user found from access token
+[2017-05-12 13:49:59] INFO [BdayApp.EventView.get_event:40] event object found with id 2
+[2017-05-12 13:49:59] INFO [BdayApp.EventView.get_event:49] Completing function get_event
+[2017-05-12 13:49:59] INFO [BdayApp.EventView.put:93] Completing PUT method
+[2017-05-12 13:49:59] INFO [django.server.log_message:131] "PUT /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/ HTTP/1.1" 200 176
+[2017-05-12 13:50:24] INFO [BdayApp.EventView.put:79] Starting PUT method
+[2017-05-12 13:50:24] INFO [BdayApp.EventView.put:82] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:50:24] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 13:50:24] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:50:42] INFO [BdayApp.EventView.get_event:38] user found from access token
+[2017-05-12 13:50:42] INFO [BdayApp.EventView.get_event:40] event object found with id 2
+[2017-05-12 13:50:42] INFO [BdayApp.EventView.get_event:49] Completing function get_event
+[2017-05-12 13:50:42] INFO [BdayApp.EventView.put:94] Completing PUT method
+[2017-05-12 13:50:42] INFO [django.server.log_message:131] "PUT /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/ HTTP/1.1" 200 176
+[2017-05-12 13:51:38] INFO [BdayApp.EventView.put:79] Starting PUT method
+[2017-05-12 13:51:38] INFO [BdayApp.EventView.put:82] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:51:38] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 13:51:38] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:51:56] INFO [BdayApp.EventView.get_event:38] user found from access token
+[2017-05-12 13:51:56] INFO [BdayApp.EventView.get_event:40] event object found with id 2
+[2017-05-12 13:51:56] INFO [BdayApp.EventView.get_event:49] Completing function get_event
+[2017-05-12 13:51:56] ERROR [BdayApp.EventView.handle_error:28] "'file_field'"
+[2017-05-12 13:51:56] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 85, in put
+    print request.FILES['file_field']
+  File "E:\Python27\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'file_field'"
+
+[2017-05-12 13:51:56] ERROR [django.server.log_message:131] "PUT /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/ HTTP/1.1" 500 29
+[2017-05-12 13:53:17] INFO [BdayApp.EventView.put:79] Starting PUT method
+[2017-05-12 13:53:17] INFO [BdayApp.EventView.put:82] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:53:17] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 13:53:17] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:53:31] INFO [BdayApp.EventView.get_event:38] user found from access token
+[2017-05-12 13:53:31] INFO [BdayApp.EventView.get_event:40] event object found with id 2
+[2017-05-12 13:53:31] INFO [BdayApp.EventView.get_event:49] Completing function get_event
+[2017-05-12 13:53:31] ERROR [BdayApp.EventView.handle_error:28] "'file_field'"
+[2017-05-12 13:53:31] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 85, in put
+    print request.FILES['file_field']
+  File "E:\Python27\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'file_field'"
+
+[2017-05-12 13:53:31] ERROR [django.server.log_message:131] "PUT /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/ HTTP/1.1" 500 29
+[2017-05-12 13:55:05] INFO [BdayApp.EventView.put:79] Starting PUT method
+[2017-05-12 13:55:05] INFO [BdayApp.EventView.put:82] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:55:05] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 13:55:05] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:55:18] INFO [BdayApp.EventView.get_event:38] user found from access token
+[2017-05-12 13:55:18] INFO [BdayApp.EventView.get_event:40] event object found with id 2
+[2017-05-12 13:55:18] INFO [BdayApp.EventView.get_event:49] Completing function get_event
+[2017-05-12 13:55:18] ERROR [BdayApp.EventView.handle_error:28] "'file_field'"
+[2017-05-12 13:55:18] ERROR [BdayApp.EventView.handle_error:29] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventView.py", line 85, in put
+    print request.FILES['file_field']
+  File "E:\Python27\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'file_field'"
+
+[2017-05-12 13:55:18] ERROR [django.server.log_message:131] "PUT /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/ HTTP/1.1" 500 29
+[2017-05-12 13:55:39] INFO [BdayApp.EventView.put:79] Starting PUT method
+[2017-05-12 13:55:39] INFO [BdayApp.EventView.put:82] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:55:39] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 13:55:39] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:55:53] INFO [BdayApp.EventView.get_event:38] user found from access token
+[2017-05-12 13:55:53] INFO [BdayApp.EventView.get_event:40] event object found with id 2
+[2017-05-12 13:55:53] INFO [BdayApp.EventView.get_event:49] Completing function get_event
+[2017-05-12 13:55:53] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Python27\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\rest_framework\views.py", line 479, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\rest_framework\views.py", line 399, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+[2017-05-12 13:55:53] ERROR [django.server.log_message:131] "PUT /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/ HTTP/1.1" 500 87237
+[2017-05-12 13:57:52] INFO [BdayApp.EventView.put:79] Starting PUT method
+[2017-05-12 13:57:52] INFO [BdayApp.EventView.put:82] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:57:52] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 13:57:52] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:58:05] INFO [BdayApp.EventView.get_event:38] user found from access token
+[2017-05-12 13:58:05] INFO [BdayApp.EventView.get_event:40] event object found with id 2
+[2017-05-12 13:58:05] INFO [BdayApp.EventView.get_event:49] Completing function get_event
+[2017-05-12 13:58:05] INFO [BdayApp.EventView.put:87] found file in request
+[2017-05-12 13:58:06] INFO [BdayApp.EventView.put:93] Completing PUT method
+[2017-05-12 13:58:06] INFO [django.server.log_message:131] "PUT /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/ HTTP/1.1" 200 240
+[2017-05-12 13:59:57] INFO [BdayApp.EventView.get:66] Starting GET method
+[2017-05-12 13:59:57] INFO [BdayApp.EventView.get:69] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 13:59:57] INFO [BdayApp.EventView.get_event:35] Starting function get_event
+[2017-05-12 13:59:57] INFO [BdayApp.EventView.get_event:36] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 14:00:05] INFO [BdayApp.EventView.get_event:38] user found from access token
+[2017-05-12 14:00:05] INFO [BdayApp.EventView.get_event:40] event object found with id 2
+[2017-05-12 14:00:05] INFO [BdayApp.EventView.get_event:43] Completing function get_event
+[2017-05-12 14:00:05] INFO [BdayApp.EventView.get:72] Completing GET method
+[2017-05-12 14:00:05] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/ HTTP/1.1" 200 240
+[2017-05-12 14:01:49] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/user/friends HTTP/1.1" 200 657
+[2017-05-12 14:02:59] INFO [BdayApp.EventMembersView.get:92] Starting GET method
+[2017-05-12 14:02:59] INFO [BdayApp.EventMembersView.get:95] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 14:02:59] INFO [BdayApp.EventMembersView.get_members_list:73] Starting function get_members_list
+[2017-05-12 14:03:11] INFO [BdayApp.EventMembersView.get_members_list:75] user obtained from access token
+[2017-05-12 14:03:11] INFO [BdayApp.EventMembersView.get_members_list:78] member list found for event 2
+[2017-05-12 14:03:11] INFO [BdayApp.EventMembersView.get_members_list:79] Completing function get_members_list
+[2017-05-12 14:03:11] INFO [BdayApp.EventMembersView.get:99] Completing GET method
+[2017-05-12 14:03:11] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/members HTTP/1.1" 200 2
+[2017-05-12 14:03:36] INFO [BdayApp.EventAdminView.get_admin_list:36] <QuerySet [<BdayAppUser: BdayAppUser object>]>
+[2017-05-12 14:03:36] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/admin HTTP/1.1" 200 437
+[2017-05-12 14:05:03] INFO [BdayApp.EventListView.get_queryset:30] Starting function get_queryset
+[2017-05-12 14:05:03] INFO [BdayApp.EventListView.get_queryset:34] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD user is None
+[2017-05-12 14:05:11] INFO [BdayApp.EventListView.get_queryset:36] user obtained from access token
+[2017-05-12 14:05:11] INFO [BdayApp.EventListView.get_queryset:45] events obtained in which user is admin as well as user
+[2017-05-12 14:05:11] INFO [BdayApp.EventListView.get_queryset:46] Completing function get_queryset
+[2017-05-12 14:05:11] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/list HTTP/1.1" 200 863
+[2017-05-12 14:20:01] INFO [BdayApp.EventMembersView.get:92] Starting GET method
+[2017-05-12 14:20:01] INFO [BdayApp.EventMembersView.get:95] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is 2
+[2017-05-12 14:20:01] INFO [BdayApp.EventMembersView.get_members_list:73] Starting function get_members_list
+[2017-05-12 14:20:11] INFO [BdayApp.EventMembersView.get_members_list:75] user obtained from access token
+[2017-05-12 14:20:11] INFO [BdayApp.EventMembersView.get_members_list:78] member list found for event 2
+[2017-05-12 14:20:11] INFO [BdayApp.EventMembersView.get_members_list:79] Completing function get_members_list
+[2017-05-12 14:20:11] INFO [BdayApp.EventMembersView.get:99] Completing GET method
+[2017-05-12 14:20:11] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/members HTTP/1.1" 200 2
+[2017-05-12 14:20:57] INFO [BdayApp.EventMembersView.put:106] Starting PUT method
+[2017-05-12 14:20:57] INFO [BdayApp.EventMembersView.put:109] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is2
+[2017-05-12 14:21:11] INFO [BdayApp.EventMembersView.put:113] event obtained from id
+[2017-05-12 14:21:19] ERROR [BdayApp.EventMembersView.handle_error:66] unsupported operand type(s) for +: 'int' and 'str'
+[2017-05-12 14:21:19] ERROR [BdayApp.EventMembersView.handle_error:67] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventMembersView.py", line 124, in put
+    message_field=user_.id + "joined the event",
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+[2017-05-12 14:21:19] ERROR [django.server.log_message:131] "PUT /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/members HTTP/1.1" 500 63
+[2017-05-12 14:25:19] INFO [BdayApp.EventMembersView.put:106] Starting PUT method
+[2017-05-12 14:25:19] INFO [BdayApp.EventMembersView.put:109] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is2
+[2017-05-12 14:25:34] INFO [BdayApp.EventMembersView.put:113] event obtained from id
+[2017-05-12 14:25:46] INFO [BdayApp.EventMembersView.put:128] added center chat
+[2017-05-12 14:25:46] INFO [BdayApp.EventMembersView.put:132] added notification message Your friend Swayan added you to event Test Me
+[2017-05-12 14:25:51] INFO [BdayApp.EventMembersView.put:138] Sending a message through apollo
+[2017-05-12 14:25:53] INFO [BdayApp.EventMembersView.put:140] Message Sent.........Disconnecting
+[2017-05-12 14:26:04] INFO [BdayApp.EventMembersView.put:142] Disconnected !!!
+[2017-05-12 14:26:04] ERROR [BdayApp.EventMembersView.handle_error:66] 'ManyRelatedManager' object is not iterable
+[2017-05-12 14:26:04] ERROR [BdayApp.EventMembersView.handle_error:67] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventMembersView.py", line 149, in put
+    for member in event_members:
+TypeError: 'ManyRelatedManager' object is not iterable
+
+[2017-05-12 14:26:04] ERROR [django.server.log_message:131] "PUT /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/members HTTP/1.1" 500 56
+[2017-05-12 14:30:02] INFO [BdayApp.EventMembersView.delete:180] Starting DELETE method
+[2017-05-12 14:30:02] INFO [BdayApp.EventMembersView.delete:183] access token is EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD event id is2
+[2017-05-12 14:30:12] ERROR [BdayApp.UserProfileView.handle_error:64] Error validating access token: Session has expired on Friday, 12-May-17 02:00:00 PDT. The current time is Friday, 12-May-17 02:00:12 PDT.
+[2017-05-12 14:30:12] ERROR [BdayApp.EventMembersView.handle_error:66] Error validating access token: Session has expired on Friday, 12-May-17 02:00:00 PDT. The current time is Friday, 12-May-17 02:00:12 PDT.
+[2017-05-12 14:30:12] ERROR [BdayApp.EventMembersView.handle_error:67] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventMembersView.py", line 184, in delete
+    user = UserProfileView.get_profile(access_token).user
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\UserProfileView.py", line 81, in get_profile
+    UserProfileView.handle_error(e)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\UserProfileView.py", line 65, in handle_error
+    raise exceptions.APIException(e)
+APIException: Error validating access token: Session has expired on Friday, 12-May-17 02:00:00 PDT. The current time is Friday, 12-May-17 02:00:12 PDT.
+
+[2017-05-12 14:30:12] ERROR [django.server.log_message:131] "DELETE /EAAX7retDkCcBALrUkHOqcF3YXRaGPUhKVkG57ZAjDfsWR1Dp926yhgKlEukgr64NSF9mRnUnZCVOz9LT6wQfF6nGZAvFnBbqhqbfVwBlPHE9tbD89cjhvAbVGprRk9fZCpxXa3CR4PEgDADYYEdnGw8tJskyCITfgE5fCaOGVUQtUSw6fy4vhlQwNglaJxsZD/events/2/members HTTP/1.1" 500 150
+[2017-05-12 14:32:07] INFO [BdayApp.EventMembersView.delete:180] Starting DELETE method
+[2017-05-12 14:32:07] INFO [BdayApp.EventMembersView.delete:183] access token is EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD event id is2
+[2017-05-12 14:32:21] INFO [BdayApp.EventMembersView.delete:186] event obtained from id
+[2017-05-12 14:32:21] ERROR [BdayApp.EventMembersView.handle_error:66] 'Request' object has no attribute '__getitem__'
+[2017-05-12 14:32:21] ERROR [BdayApp.EventMembersView.handle_error:67] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventMembersView.py", line 187, in delete
+    if "user_ids" in request['data']:
+TypeError: 'Request' object has no attribute '__getitem__'
+
+[2017-05-12 14:32:21] ERROR [django.server.log_message:131] "DELETE /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/events/2/members HTTP/1.1" 500 60
+[2017-05-12 14:33:12] INFO [BdayApp.EventMembersView.delete:180] Starting DELETE method
+[2017-05-12 14:33:12] INFO [BdayApp.EventMembersView.delete:183] access token is EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD event id is2
+[2017-05-12 14:33:25] INFO [BdayApp.EventMembersView.delete:186] event obtained from id
+[2017-05-12 14:36:30] INFO [BdayApp.EventMembersView.get:92] Starting GET method
+[2017-05-12 14:36:30] INFO [BdayApp.EventMembersView.get:95] access token is EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD event id is 2
+[2017-05-12 14:36:30] INFO [BdayApp.EventMembersView.get_members_list:73] Starting function get_members_list
+[2017-05-12 14:36:42] INFO [BdayApp.EventMembersView.get_members_list:75] user obtained from access token
+[2017-05-12 14:36:42] INFO [BdayApp.EventMembersView.get_members_list:78] member list found for event 2
+[2017-05-12 14:36:42] INFO [BdayApp.EventMembersView.get_members_list:79] Completing function get_members_list
+[2017-05-12 14:36:42] INFO [BdayApp.EventMembersView.get:99] Completing GET method
+[2017-05-12 14:36:42] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/events/2/members HTTP/1.1" 200 2
+[2017-05-12 14:41:52] INFO [BdayApp.EventMembersView.put:106] Starting PUT method
+[2017-05-12 14:41:52] INFO [BdayApp.EventMembersView.put:109] access token is EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD event id is2
+[2017-05-12 14:42:04] ERROR [BdayApp.UserProfileView.handle_error:64] HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v2.8/me?access_token=EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x03E5E9D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+[2017-05-12 14:42:04] ERROR [BdayApp.EventMembersView.handle_error:66] HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v2.8/me?access_token=EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x03E5E9D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+[2017-05-12 14:42:04] ERROR [BdayApp.EventMembersView.handle_error:67] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventMembersView.py", line 110, in put
+    user_profile = UserProfileView.get_profile(access_token)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\UserProfileView.py", line 81, in get_profile
+    UserProfileView.handle_error(e)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\UserProfileView.py", line 65, in handle_error
+    raise exceptions.APIException(e)
+APIException: HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v2.8/me?access_token=EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x03E5E9D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+
+[2017-05-12 14:42:04] ERROR [django.server.log_message:131] "PUT /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/events/2/members HTTP/1.1" 500 510
+[2017-05-12 14:42:53] INFO [BdayApp.EventMembersView.put:106] Starting PUT method
+[2017-05-12 14:42:53] INFO [BdayApp.EventMembersView.put:109] access token is EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD event id is2
+[2017-05-12 14:43:02] INFO [BdayApp.EventMembersView.put:113] event obtained from id
+[2017-05-12 14:43:11] INFO [BdayApp.EventMembersView.put:129] added center chat
+[2017-05-12 14:43:11] INFO [BdayApp.EventMembersView.put:133] added notification message Your friend Swayan added you to event Test Me
+[2017-05-12 14:43:15] INFO [BdayApp.EventMembersView.put:139] Sending a message through apollo
+[2017-05-12 14:43:17] INFO [BdayApp.EventMembersView.put:141] Message Sent.........Disconnecting
+[2017-05-12 14:43:25] INFO [BdayApp.EventMembersView.put:143] Disconnected !!!
+[2017-05-12 14:43:30] INFO [BdayApp.EventMembersView.send_to_queue:46] Sending a message through apollo
+[2017-05-12 14:43:32] INFO [BdayApp.EventMembersView.send_to_queue:48] Message Sent.........Disconnecting
+[2017-05-12 14:43:39] INFO [BdayApp.EventMembersView.send_to_queue:50] Disconnected !!!
+[2017-05-12 14:43:43] INFO [BdayApp.EventMembersView.send_to_queue:46] Sending a message through apollo
+[2017-05-12 14:43:45] INFO [BdayApp.EventMembersView.send_to_queue:48] Message Sent.........Disconnecting
+[2017-05-12 14:43:54] INFO [BdayApp.EventMembersView.send_to_queue:50] Disconnected !!!
+[2017-05-12 14:46:55] INFO [BdayApp.EventMembersView.delete:193] Starting DELETE method
+[2017-05-12 14:46:55] INFO [BdayApp.EventMembersView.delete:196] access token is EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD event id is2
+[2017-05-12 14:47:07] INFO [BdayApp.EventMembersView.delete:199] event obtained from id
+[2017-05-12 14:47:17] ERROR [BdayApp.EventMembersView.handle_error:66] unsupported operand type(s) for +: 'int' and 'str'
+[2017-05-12 14:47:17] ERROR [BdayApp.EventMembersView.handle_error:67] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\EventMembersView.py", line 231, in delete
+    message_field=user.id + " deleted " + user_.id + " from the event",
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+[2017-05-12 14:47:17] ERROR [django.server.log_message:131] "DELETE /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/events/2/members HTTP/1.1" 500 63
+[2017-05-12 14:49:58] INFO [BdayApp.EventMembersView.put:106] Starting PUT method
+[2017-05-12 14:49:58] INFO [BdayApp.EventMembersView.put:109] access token is EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD event id is2
+[2017-05-12 14:50:12] INFO [BdayApp.EventMembersView.put:113] event obtained from id
+[2017-05-12 14:50:21] INFO [BdayApp.EventMembersView.put:129] added center chat
+[2017-05-12 14:50:21] INFO [BdayApp.EventMembersView.put:133] added notification message Your friend Swayan added you to event Test Me
+[2017-05-12 14:50:25] INFO [BdayApp.EventMembersView.put:139] Sending a message through apollo
+[2017-05-12 14:50:27] INFO [BdayApp.EventMembersView.put:141] Message Sent.........Disconnecting
+[2017-05-12 14:50:36] INFO [BdayApp.EventMembersView.put:143] Disconnected !!!
+[2017-05-12 14:50:41] INFO [BdayApp.EventMembersView.send_to_queue:46] Sending a message through apollo
+[2017-05-12 14:50:43] INFO [BdayApp.EventMembersView.send_to_queue:48] Message Sent.........Disconnecting
+[2017-05-12 14:50:52] INFO [BdayApp.EventMembersView.send_to_queue:50] Disconnected !!!
+[2017-05-12 14:59:39] INFO [BdayApp.EventMembersView.put:106] Starting PUT method
+[2017-05-12 14:59:39] INFO [BdayApp.EventMembersView.put:109] access token is EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD event id is2
+[2017-05-12 14:59:54] INFO [BdayApp.EventMembersView.put:113] event obtained from id
+[2017-05-12 15:00:05] INFO [BdayApp.EventMembersView.put:129] added center chat
+[2017-05-12 15:00:06] INFO [BdayApp.EventMembersView.put:133] added notification message Your friend Swayan added you to event Test Me
+[2017-05-12 15:00:09] INFO [BdayApp.EventMembersView.put:139] Sending a message through apollo
+[2017-05-12 15:00:11] INFO [BdayApp.EventMembersView.put:141] Message Sent.........Disconnecting
+[2017-05-12 15:00:20] INFO [BdayApp.EventMembersView.put:143] Disconnected !!!
+[2017-05-12 15:00:25] INFO [BdayApp.EventMembersView.send_to_queue:46] Sending a message through apollo
+[2017-05-12 15:00:27] INFO [BdayApp.EventMembersView.send_to_queue:48] Message Sent.........Disconnecting
+[2017-05-12 15:00:36] INFO [BdayApp.EventMembersView.send_to_queue:50] Disconnected !!!
+[2017-05-12 15:00:37] INFO [BdayApp.EventMembersView.put:182] Sent all notifications
+[2017-05-12 15:00:37] INFO [BdayApp.EventMembersView.put:183] Completing PUT method
+[2017-05-12 15:00:37] INFO [django.server.log_message:131] "PUT /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/events/2/members HTTP/1.1" 202 0
+[2017-05-12 15:03:51] INFO [BdayApp.EventMembersView.delete:195] Starting DELETE method
+[2017-05-12 15:03:51] INFO [BdayApp.EventMembersView.delete:200] access token is EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD event id is2
+[2017-05-12 15:03:55] INFO [BdayApp.EventMembersView.delete:203] event obtained from id
+[2017-05-12 15:03:59] INFO [BdayApp.EventMembersView.delete:239] added center chat
+[2017-05-12 15:04:03] INFO [BdayApp.EventMembersView.send_to_queue:46] Sending a message through apollo
+[2017-05-12 15:04:05] INFO [BdayApp.EventMembersView.send_to_queue:48] Message Sent.........Disconnecting
+[2017-05-12 15:04:11] INFO [BdayApp.EventMembersView.send_to_queue:50] Disconnected !!!
+[2017-05-12 15:04:12] INFO [BdayApp.EventMembersView.delete:264] Sent all Notification
+[2017-05-12 15:04:12] INFO [BdayApp.EventMembersView.delete:270] Completing DELETE method
+[2017-05-12 15:04:12] INFO [django.server.log_message:131] "DELETE /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/events/2/members HTTP/1.1" 202 0
+[2017-05-12 15:18:05] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/events/2/chat_list HTTP/1.1" 200 2904
+[2017-05-12 15:20:12] INFO [BdayApp.ChatListView.post:69] chat message is Hi !!!!!
+[2017-05-12 15:20:12] INFO [BdayApp.ChatListView.post:80] Hi !!!!!
+[2017-05-12 15:20:13] ERROR [BdayApp.ChatListView.handle_error:31] global name 'event_cha' is not defined
+[2017-05-12 15:20:13] ERROR [BdayApp.ChatListView.handle_error:32] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\ChatListView.py", line 81, in post
+    chat = EventChat.objects.create_event_chat(Event.objects.get(pk=id),user,wish,message_field,url_field,file_field)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\models.py", line 483, in create_event_chat
+    return event_cha
+NameError: global name 'event_cha' is not defined
+
+[2017-05-12 15:20:13] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/events/2/chat_list HTTP/1.1" 500 51
+[2017-05-12 15:21:27] INFO [BdayApp.ChatListView.post:69] chat message is Hi !!!!!
+[2017-05-12 15:21:27] INFO [BdayApp.ChatListView.post:80] Hi !!!!!
+[2017-05-12 15:21:31] INFO [BdayApp.ChatListView.post:88] Sending a message through apollo
+[2017-05-12 15:21:33] INFO [BdayApp.ChatListView.post:90] Message Sent.........Disconnecting
+[2017-05-12 15:21:41] INFO [BdayApp.ChatListView.post:92] Disconnected !!!
+[2017-05-12 15:21:41] INFO [django.server.log_message:131] "POST /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/events/2/chat_list HTTP/1.1" 200 542
+[2017-05-12 15:22:50] INFO [BdayApp.ChatListView.post:80] None
+[2017-05-12 15:30:33] INFO [BdayApp.ChatListView.post:80] None
+[2017-05-12 15:30:38] ERROR [BdayApp.ChatListView.handle_error:31] <ImageFieldFile: images/2017/05/12/6a00e5509b3be688340111684db157970c-800wi.jpg> is not JSON serializable
+[2017-05-12 15:30:38] ERROR [BdayApp.ChatListView.handle_error:32] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\ChatListView.py", line 87, in post
+    conn.send(body=json.dumps(serializer.data), destination='/topic/chat_' + str(event.id))
+  File "E:\Python27\lib\json\__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "E:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "E:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "E:\Python27\lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <ImageFieldFile: images/2017/05/12/6a00e5509b3be688340111684db157970c-800wi.jpg> is not JSON serializable
+
+[2017-05-12 15:30:38] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/events/2/chat_list HTTP/1.1" 500 118
+[2017-05-12 15:32:47] INFO [BdayApp.ChatListView.post:80] None
+[2017-05-12 15:32:52] INFO [BdayApp.ChatListView.post:88] Sending a message through apollo
+[2017-05-12 15:32:54] INFO [BdayApp.ChatListView.post:90] Message Sent.........Disconnecting
+[2017-05-12 15:33:04] INFO [BdayApp.ChatListView.post:92] Disconnected !!!
+[2017-05-12 15:33:04] INFO [django.server.log_message:131] "POST /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/events/2/chat_list HTTP/1.1" 200 605
+[2017-05-12 15:37:05] INFO [BdayApp.ChatListView.post:80] None
+[2017-05-12 15:37:08] INFO [BdayApp.ChatListView.post:88] Sending a message through apollo
+[2017-05-12 15:37:10] INFO [BdayApp.ChatListView.post:90] Message Sent.........Disconnecting
+[2017-05-12 15:37:20] INFO [BdayApp.ChatListView.post:92] Disconnected !!!
+[2017-05-12 15:37:20] INFO [django.server.log_message:131] "POST /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/events/2/chat_list HTTP/1.1" 200 1374
+[2017-05-12 15:39:51] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/user/friends HTTP/1.1" 200 657
+[2017-05-12 15:45:05] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/messages/list HTTP/1.1" 200 52
+[2017-05-12 15:55:36] INFO [BdayApp.MessageView.post:87] Sending a message through apollo
+[2017-05-12 15:55:38] INFO [BdayApp.MessageView.post:89] Message Sent.........Disconnecting
+[2017-05-12 15:55:45] INFO [BdayApp.MessageView.post:91] Disconnected !!!
+[2017-05-12 15:55:45] INFO [django.server.log_message:131] "POST /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/messages/ HTTP/1.1" 200 914
+[2017-05-12 15:56:22] INFO [BdayApp.MessageView.get_message:35] Hello
+[2017-05-12 15:56:22] INFO [BdayApp.MessageView.get:50] Hello
+[2017-05-12 15:56:22] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/messages/1/ HTTP/1.1" 200 915
+[2017-05-12 15:57:15] INFO [BdayApp.MessageView.get_message:35] Hello
+[2017-05-12 15:57:15] INFO [BdayApp.MessageView.put:61] Hello
+[2017-05-12 15:57:15] INFO [django.server.log_message:131] "PUT /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/messages/1/ HTTP/1.1" 200 917
+[2017-05-12 16:00:15] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/notifications/list HTTP/1.1" 200 3241
+[2017-05-12 16:10:08] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/reminders/list HTTP/1.1" 200 1627
+[2017-05-12 16:17:11] INFO [BdayApp.ReminderView.post:89] Starting function for POST method in ReminderView
+[2017-05-12 16:17:11] INFO [BdayApp.ReminderView.post:98] access token is EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD
+[2017-05-12 16:17:11] ERROR [BdayApp.ReminderView.handle_error:26] cannot concatenate 'str' and 'NoneType' objects
+[2017-05-12 16:17:11] ERROR [BdayApp.ReminderView.handle_error:27] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\ReminderView.py", line 99, in post
+    logger.info("file object is "+file)
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+
+[2017-05-12 16:17:11] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/reminders/ HTTP/1.1" 500 60
+[2017-05-12 16:18:47] INFO [BdayApp.ReminderView.post:89] Starting function for POST method in ReminderView
+[2017-05-12 16:18:47] INFO [BdayApp.ReminderView.post:98] access token is EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD
+[2017-05-12 16:18:47] INFO [BdayApp.ReminderView.post:99] file object found
+[2017-05-12 16:18:59] INFO [BdayApp.ReminderView.post:101] user object found from access token
+[2017-05-12 16:18:59] INFO [BdayApp.ReminderView.post:106] reminder object created with name Anniversary date 2017-06-11 user BdayAppUser object type Anniversary picture_file 10624912_10202925768764976_4189152354336541305_n.jpg
+[2017-05-12 16:18:59] INFO [BdayApp.ReminderView.post:108] reminder saved
+[2017-05-12 16:18:59] INFO [BdayApp.ReminderView.post:110] Serializer created
+[2017-05-12 16:18:59] INFO [BdayApp.ReminderView.post:111] Ending function for POST method in ReminderView
+[2017-05-12 16:18:59] INFO [django.server.log_message:131] "POST /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/reminders/ HTTP/1.1" 200 324
+[2017-05-12 16:24:15] INFO [BdayApp.EventListView.get_queryset:30] Starting function get_queryset
+[2017-05-12 16:24:15] INFO [BdayApp.EventListView.get_queryset:34] access token is EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD user is None
+[2017-05-12 16:24:30] INFO [BdayApp.EventListView.get_queryset:36] user obtained from access token
+[2017-05-12 16:24:30] INFO [BdayApp.EventListView.get_queryset:45] events obtained in which user is admin as well as user
+[2017-05-12 16:24:30] INFO [BdayApp.EventListView.get_queryset:46] Completing function get_queryset
+[2017-05-12 16:24:31] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/events/list HTTP/1.1" 200 915
+[2017-05-12 16:25:18] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/last_read_chat/3/ HTTP/1.1" 200 618
+[2017-05-12 16:26:39] INFO [django.server.log_message:131] "PUT /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/last_read_chat/3/ HTTP/1.1" 200 1185
+[2017-05-12 16:43:38] ERROR [BdayApp.UserProfileView.handle_error:62] Error validating access token: Session has expired on Friday, 12-May-17 04:00:00 PDT. The current time is Friday, 12-May-17 04:13:38 PDT.
+[2017-05-12 16:43:38] ERROR [BdayApp.UserProfileView.handle_error:62] global name 'traceback' is not defined
+[2017-05-12 16:43:38] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/user_profile
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\Python27\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Python27\lib\site-packages\rest_framework\views.py", line 477, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\Python27\lib\site-packages\rest_framework\views.py", line 437, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\Python27\lib\site-packages\rest_framework\views.py", line 474, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\UserProfileView.py", line 177, in get
+    UserProfileView.handle_error(e)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\UserProfileView.py", line 63, in handle_error
+    logger.error(traceback.format_exc())
+NameError: global name 'traceback' is not defined
+[2017-05-12 16:43:38] ERROR [django.server.log_message:131] "GET /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/user_profile HTTP/1.1" 500 19180
+[2017-05-12 16:44:34] ERROR [BdayApp.UserProfileView.handle_error:62] Error validating access token: Session has expired on Friday, 12-May-17 04:00:00 PDT. The current time is Friday, 12-May-17 04:14:34 PDT.
+[2017-05-12 16:44:34] ERROR [BdayApp.UserProfileView.handle_error:63] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\UserProfileView.py", line 71, in get_profile
+    profile_id = graph.get_object(id='me')['id']
+  File "c:\users\paa\src\facebook-sdk\facebook\__init__.py", line 107, in get_object
+    return self.request("{0}/{1}".format(self.version, id), args)
+  File "c:\users\paa\src\facebook-sdk\facebook\__init__.py", line 274, in request
+    raise GraphAPIError(result)
+GraphAPIError: Error validating access token: Session has expired on Friday, 12-May-17 04:00:00 PDT. The current time is Friday, 12-May-17 04:14:34 PDT.
+
+[2017-05-12 16:44:34] ERROR [BdayApp.UserProfileView.handle_error:62] Error validating access token: Session has expired on Friday, 12-May-17 04:00:00 PDT. The current time is Friday, 12-May-17 04:14:34 PDT.
+[2017-05-12 16:44:34] ERROR [BdayApp.UserProfileView.handle_error:63] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\UserProfileView.py", line 169, in get
+    user_profile = UserProfileView.get_profile(access_token=access_token)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\UserProfileView.py", line 80, in get_profile
+    UserProfileView.handle_error(e)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\UserProfileView.py", line 64, in handle_error
+    raise exceptions.APIException(e)
+APIException: Error validating access token: Session has expired on Friday, 12-May-17 04:00:00 PDT. The current time is Friday, 12-May-17 04:14:34 PDT.
+
+[2017-05-12 16:44:34] ERROR [django.server.log_message:131] "GET /EAAX7retDkCcBAAjgWavO7bEmkfOkYaiZAZC1KxVspZCrT8gpMtFtR2Qdlg379mky3dGWNAZB4S4PAcvvtVwBXk9MhEETn4K9DFq4C97ZCt1qfb9NSInlD4UF6vqTGCb6NVKJtgf6E6Fpg4TRTSRbdYNRECpTxi2GEnmmmSPL3XlKdrfUjzuVqfxf84uxIwmUZD/user_profile HTTP/1.1" 500 150
+[2017-05-12 16:49:42] INFO [BdayApp.UserProfileView.get:174] Completing get method
+[2017-05-12 16:49:42] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/user_profile HTTP/1.1" 200 411
+[2017-05-12 17:07:56] WARNING [django.request._reject:158] Forbidden (CSRF cookie not set.): /EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/send_address_request_notification/
+[2017-05-12 17:07:56] WARNING [django.server.log_message:131] "POST /EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/send_address_request_notification/ HTTP/1.1" 403 2857
+[2017-05-12 17:08:43] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/send_address_request_notification/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+TypeError: send_address_request_notification() got multiple values for keyword argument 'access_token'
+[2017-05-12 17:08:44] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/send_address_request_notification/ HTTP/1.1" 500 74158
+[2017-05-12 17:10:18] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/send_address_request_notification/ HTTP/1.1" 500 29
+[2017-05-12 17:11:11] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/send_address_request_notification/
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\views.py", line 297, in send_address_request_notification
+    if "to_user_id" not in request.data:
+AttributeError: 'WSGIRequest' object has no attribute 'data'
+[2017-05-12 17:11:11] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/send_address_request_notification/ HTTP/1.1" 500 78979
+[2017-05-12 17:12:10] INFO [django.server.log_message:131] "POST /EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/send_address_request_notification/ HTTP/1.1" 200 22
+[2017-05-12 17:21:18] ERROR [django.request.handle_uncaught_exception:124] Internal Server Error: /EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/wish/list
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Python27\lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_request(request)
+  File "E:\Python27\lib\site-packages\django\middleware\common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "E:\Python27\lib\site-packages\django\middleware\common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:3000/EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/wish/list/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2017-05-12 17:21:18] ERROR [django.server.log_message:131] "POST /EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/wish/list HTTP/1.1" 500 71622
+[2017-05-12 17:21:42] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/wish/list/ HTTP/1.1" 200 52
+[2017-05-12 17:22:20] ERROR [BdayApp.WishListView.handle_error:23] BdayAppUser matching query does not exist.
+[2017-05-12 17:22:20] ERROR [BdayApp.WishListView.handle_error:24] Traceback (most recent call last):
+  File "C:\Users\Paa\PycharmProjects\ProjectBdayApp\BdayApp\WishListView.py", line 39, in get_queryset
+    user = BdayAppUser.objects.get(id=id)
+  File "E:\Python27\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\Python27\lib\site-packages\django\db\models\query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: BdayAppUser matching query does not exist.
+
+[2017-05-12 17:22:20] ERROR [django.server.log_message:131] "GET /EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/wish/list/5/ HTTP/1.1" 500 55
+[2017-05-12 17:22:39] INFO [django.server.log_message:131] "GET /EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/wish/list/3/ HTTP/1.1" 200 52
+[2017-05-12 17:26:50] INFO [django.server.log_message:131] "GET /admin HTTP/1.1" 301 0
+[2017-05-12 17:26:50] INFO [django.server.log_message:131] "GET /admin/ HTTP/1.1" 200 5523
+[2017-05-12 17:26:58] INFO [django.server.log_message:131] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 434
+[2017-05-12 17:26:58] INFO [django.server.log_message:131] "GET /static/admin/css/base.css HTTP/1.1" 200 15937
+[2017-05-12 17:26:58] INFO [django.server.log_message:131] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[2017-05-12 17:26:59] INFO [django.server.log_message:131] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[2017-05-12 17:26:59] INFO [django.server.log_message:131] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[2017-05-12 17:26:59] INFO [django.server.log_message:131] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[2017-05-12 17:26:59] INFO [django.server.log_message:131] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[2017-05-12 17:26:59] INFO [django.server.log_message:131] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[2017-05-12 17:27:07] INFO [django.server.log_message:131] "GET /admin/logout/ HTTP/1.1" 200 1010
+[2017-05-12 17:27:10] INFO [django.server.log_message:131] "GET /admin/ HTTP/1.1" 302 0
+[2017-05-12 17:27:10] INFO [django.server.log_message:131] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1653
+[2017-05-12 17:27:10] INFO [django.server.log_message:131] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[2017-05-12 17:29:56] INFO [django.server.log_message:131] "POST /EAAX7retDkCcBADJB67pHEcsZBplLvBwGrcVQhI9D6nZAj0QJ74hV4ZBjj3X7lkGRvmnh87yn9OMqrA64K8URQJQIMa9RbNTJWUqz9xPDRtxJWs4sudpAdKWzxcKPYU9e1nhDsjmDEGu0JqEnUoOA7JlIrZAPiZC3lJTHcOKcnsjPTv50dQFoUOFTzHA8iMwcZD/wish/ HTTP/1.1" 200 822

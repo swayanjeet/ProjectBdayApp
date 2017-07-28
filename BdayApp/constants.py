@@ -1,0 +1,6 @@
+
+STOMP_SERVER_URL = '35.162.74.72'
+STOMP_PORT = 61613
+
+STOMP_ID = 'admin'
+STOMP_PASSWORD = 'password'

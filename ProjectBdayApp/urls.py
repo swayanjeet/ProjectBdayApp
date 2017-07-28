@@ -19,7 +19,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 from BdayApp import views
 import logging
-
 logger = logging.getLogger('django')
 from BdayApp.UserProfileView import UserProfileView
 from BdayApp.EventView import EventView
@@ -37,9 +36,11 @@ from BdayApp.MessageListView import MessageListView
 from BdayApp.WishView import WishView
 from BdayApp.WishListView import WishListView
 from BdayApp.ChatListView import ChatListView
+from BdayApp.UnreadChatBufferView import UnreadChatBufferView
+from BdayApp.OtherLifeEventsListView import OtherLifeEventsListView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^(?P<access_token>\w+)/user_profile',UserProfileView.as_view(),name='user_profile_view'),
+    url(r'^(?P<access_token>\w+)/user_profile', UserProfileView.as_view(), name='user_profile_view'),
     url(r'^(?P<access_token>\w+)/events/(?P<id>\d*)(/*)$',EventView.as_view(),name='event_view'),
     url(r'^(?P<access_token>\w+)/events/(?P<id>\d+)/admin',EventAdminView.as_view(),name='event_admin_view'),
     url(r'^(?P<access_token>\w+)/events/(?P<id>\d+)/members',EventMembersView.as_view(),name='event_members_view'),
@@ -49,6 +50,8 @@ urlpatterns = [
 
     url(r'^(?P<access_token>\w+)/reminders/(?P<id>\d*)(/*)$',ReminderView.as_view(),name='reminder_view'),
 
+    url(r'^(?P<access_token>\w+)/other_life_events/(?P<other_life_event_id>\d*)(/*)$', OtherLifeEventsListView.as_view(),name='other_life_events_view'),
+
     url(r'^(?P<access_token>\w+)/reminders/list$',ReminderListView.as_view(),name='reminder_list_view'),
 
     url(r'^(?P<access_token>\w+)/messages/(?P<id>\d*)(/*)$', MessageView.as_view(),name='message_view'),
@@ -57,12 +60,33 @@ urlpatterns = [
 
     url(r'^(?P<access_token>\w+)/wish/(?P<id>\d*)(/*)$', WishView.as_view(),name='wish_view'),
 
-    url(r'^(?P<access_token>\w+)/wish/list$', WishListView.as_view(),name='wish_list_view'),
+    url(r'^(?P<access_token>\w+)/wish/list/(?P<id>\d*)(/*)$', WishListView.as_view(),name='wish_list_view'),
 
-    url(r'^(?P<access_token>\w+)/notifications/(?P<id>\d*)(/*)$', NotificationView.as_view(), name='notification_view'),
+    url(r'^(?P<access_token>\w+)/notifications/(?P<id>[\d]*)(/*)$', NotificationView.as_view(), name='notification_view'),
 
     url(r'^(?P<access_token>\w+)/notifications/list$', NotificationListView.as_view(), name='notification_list_view'),
 
-    url(r'^(?P<access_token>\w+)/events/(?P<id>\d+)/chat_list',ChatListView.as_view(), name='chat_list_view')
+    url(r'^(?P<access_token>\w+)/events/(?P<id>\d+)/chat_list',ChatListView.as_view(), name='chat_list_view'),
+
+    url(r'^(?P<access_token>\w+)/payment_portal/', views.payment_portal),
+
+    url(r'^process_payment/', views.process_payment),
+
+    url(r'^send_notification_for_date/', views.send_notification_for_date),
+
+    url(r'^send_notification_to_friends_for_events/', views.send_notification_to_friends_for_events),
+
+    url(r'^send_notification_for_wishlist/', views.send_notification_for_wishlist),
+
+    url(r'^(?P<access_token>\w+)/send_address_request_notification/', views.send_address_request_notification),
+           
+    url(r'^(?P<access_token>\w+)/process_address_request', views.process_address_request),
+
+    url(r'^get_giftstores/', views.get_giftstore_data),
+
+    url(r'^(?P<access_token>\w+)/last_read_chat/(?P<event_id>\d+)/', UnreadChatBufferView.as_view(), name='unread_chat_buffer'),
+
+
+
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
